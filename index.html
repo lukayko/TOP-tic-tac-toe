@@ -3,14 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>TOP - Tic Tac Toe</title>
   </head>
-  <body>
-    <header>
-      <h1>TOP - Tic Tac Toe</h1>
+  <div
+    class="w-[1px] h-[1px] inset-0 m-auto absolute rounded-full shadow-[0_0_1000px_350px_rgba(255,255,255,0.08)]"
+  ></div>
+  <body class="container p-10 mx-auto bg-[#161a1d] text-white">
+    <header class="flex flex-col items-center gap-4">
+      <h1 class="text-4xl font-bold">TOP - Tic Tac Toe</h1>
+      <div class="flex gap-12">
+        <div
+          class="px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600"
+        >
+          <label
+            for="player-one"
+            class="block text-xs font-medium text-gray-900"
+            >Player One ( X )</label
+          >
+          <input
+            type="text"
+            name="player-one"
+            id="player-one"
+            class="block w-full p-0 text-gray-900 placeholder-gray-500 bg-white border-0 focus:ring-0 sm:text-sm"
+            placeholder="eg. Adam"
+            required
+          />
+        </div>
+        <p class="self-center text-2xl font-bold">vs</p>
+        <div
+          class="px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600"
+        >
+          <label
+            for="player-two"
+            class="block text-xs font-medium text-gray-900"
+            >Player Two ( O )</label
+          >
+          <input
+            type="text"
+            name="player-two"
+            id="player-two"
+            class="block w-full p-0 text-gray-900 placeholder-gray-500 bg-white border-0 focus:ring-0 sm:text-sm"
+            placeholder="eg. Josh"
+            required
+          />
+        </div>
+      </div>
+      <div class="flex gap-12">
+        <button
+          disabled
+          type="button"
+          class="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-60 disabled:hover:bg-indigo-600"
+        >
+          Play
+        </button>
+      </div>
+      <p class="text-lg font-bold">Please set your names</p>
     </header>
-    <main>
+    <main class="w-1/2 mx-auto">
+      <div
+        id="gameboard"
+        class="grid w-full h-[440px] grid-cols-3 p-2 my-4 gap-4"
+      >
+        <button
+          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
+        ></button>
+        <button
+          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
+        ></button>
+        <button
+          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
+        ></button>
+        <button
+          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
+        ></button>
+        <button
+          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
+        ></button>
+        <button
+          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
+        ></button>
+        <button
+          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
+        ></button>
+        <button
+          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
+        ></button>
+        <button
+          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
+        ></button>
+      </div>
+      <button
+        disabled
+        type="button"
+        class="inline-flex items-center px-6 py-3 text-base font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-60 disabled:hover:bg-white"
+      >
+        Reset Game
+      </button>
       <script src="script.js"></script>
     </main>
   </body>
