@@ -8,7 +8,7 @@ const GameBoard = (function () {
     let gameBoardHTML = "";
 
     board.forEach((btn, index) => {
-      gameBoardHTML += `<button id="index-${index}" data-playable="true" class='border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600'>${btn}</button>`;
+      gameBoardHTML += `<button id="index-${index}" data-playable="true" class='border rounded-md shadow-white bg-white/5 text-4xl font-bold hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600'>${btn}</button>`;
     });
 
     gameBoardElement.innerHTML = gameBoardHTML;
