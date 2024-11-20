@@ -51,52 +51,25 @@
       </div>
       <div class="flex gap-12">
         <button
-          disabled
+          id="play-button"
           type="button"
           class="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-60 disabled:hover:bg-indigo-600"
         >
           Play
         </button>
       </div>
-      <p class="text-lg font-bold">Please set your names</p>
+      <p id="game-message" class="text-lg font-bold"></p>
     </header>
     <main class="w-1/2 mx-auto">
       <div
         id="gameboard"
-        class="grid w-full h-[440px] grid-cols-3 p-2 my-4 gap-4"
-      >
-        <button
-          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
-        ></button>
-        <button
-          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
-        ></button>
-        <button
-          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
-        ></button>
-        <button
-          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
-        ></button>
-        <button
-          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
-        ></button>
-        <button
-          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
-        ></button>
-        <button
-          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
-        ></button>
-        <button
-          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
-        ></button>
-        <button
-          class="border rounded-md shadow-white bg-white/5 hover:bg-white/10 hover:shadow-indigo-600 hover:shadow-sm hover:border-indigo-600"
-        ></button>
-      </div>
+        class="grid w-full h-[440px] grid-cols-3 grid-rows-3 p-2 my-4 gap-4"
+      ></div>
       <button
         disabled
+        id="reset-button"
         type="button"
-        class="inline-flex items-center px-6 py-3 text-base font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-60 disabled:hover:bg-white"
+        class="hidden inline-flex items-center px-6 py-3 text-base font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-60 disabled:hover:bg-white"
       >
         Reset Game
       </button>
